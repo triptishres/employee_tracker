@@ -1,4 +1,4 @@
-const inquirer = require("inquirer");
+const { prompt } = require("inquirer");
 const mysql = require("mysql");
 
 // Establishing the database connection
@@ -19,38 +19,37 @@ connection.connect((err) => {
 
 // Asking initial questions
 function start() {
-    inquirer
-        .prompt({
-            name: "action",
-            type: "list",
-            message: "What would you like to do?",
-            choices: [
-                "Veiw all employee details",
-                "Add new employee details",
-                "Update employee details",
-                "Delete employee Details", ,
-                "Exit the application",
-            ],
-        })
-        .then((answer) => {
-            switch (answer.Action) {
-                case "Veiw all employee details":
-                    view();
-                    break;
-                case "Add new employee details":
-                    add();
-                    break;
-                case "Update employee details":
-                    update();
-                    break;
-                case "Delete employee Details":
-                    remove();
-                    break;
-                case "Exit the application":
-                    process.exit();
-                    break;
-            }
-        });
+    prompt({
+        name: "Action",
+        type: "list",
+        message: "What would you like to do?",
+        choices: [
+            "Veiw all employee details",
+            "Add new employee details",
+            "Update employee details",
+            "Delete employee Details",
+            "Exit the application",
+        ],
+    }).then((answer) => {
+        switch (answer.Action) {
+            case "Veiw all employee details":
+                view();
+                break;
+            case "Add new employee details":
+                add();
+                break;
+            case "Update employee details":
+                update();
+                break;
+            case "Delete employee Details":
+                remove();
+                break;
+            default:
+                console.log();
+                process.exit();
+                break;
+        }
+    });
 }
 
 //Viewing
