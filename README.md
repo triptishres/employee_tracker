@@ -11,7 +11,7 @@ This application is for a business owner to be able to view, update and add the 
 * Delete departments, roles, and employees
 * View the total utilized budget of a department -- ie the combined salaries of all employees in that department
 
-[Link to the application ] (https://drive.google.com/file/d/16RF003z6INtFZs4XPx5teXXkS60YA15b/view) 
+[Link to the application ](https://drive.google.com/file/d/16RF003z6INtFZs4XPx5teXXkS60YA15b/view) 
 
 ![Screen Shot 2020-08-14 at 11 45 58 pm](https://user-images.githubusercontent.com/65053335/90256882-b5c9ab80-de89-11ea-8622-e7ac6d0d67bb.png)
 
