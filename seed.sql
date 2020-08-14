@@ -12,12 +12,12 @@ VALUES ("Finance Manager", 110000, 1),
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ("Kent", "Ivans", 1, NULL),
-    ("Aaron", "Kloska", 2, 1),
-    ("Alfred", "Pacleb", 3, 1),
-    ("Ben", "Kellman", 4, NULL),
-    ("Rebbecca", "Stayer", 5, 4),
-    ("Marica", "Tarbor", 6, NULL),
-    ("Camellia", "Pylant", 7, NULL),
-    ("Shaun", "Rael", 8, 7),
-    ("Jeniffer", "Jezek", 9, 2),
-    ("Brittney", "Lolley",10, 3);
+    ("Aaron", "Kloska", 2, NULL),
+    ("Alfred", "Pacleb", 4, Null),
+    ("Ben", "Kellman", 3, 2),
+    ("Rebbecca", "Stayer", 5, 3),
+    ("Marica", "Tarbor", 6, 1),
+    ("Camellia", "Pylant", 7, 8),
+    ("Shaun", "Rael", 8, NULL),
+    ("Jeniffer", "Jezek", 5, 3),
+    ("Brittney", "Lolley",7, 8);
