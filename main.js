@@ -371,7 +371,7 @@ async function updateEmployeeRoles() {
                 console.log("");
                 console.table(res);
                 console.log(
-                    "Successfully updated the slected employee's role!"
+                    "Successfully updated the selected employee's role!"
                 );
             }
         );
@@ -399,7 +399,7 @@ async function updateEmployeeManagers() {
                 console.log("");
                 console.table(res);
                 console.log(
-                    "Successfully updated the slected employee's manager!"
+                    "Successfully updated the selected employee's manager!"
                 );
             }
         );
